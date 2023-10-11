@@ -6,7 +6,7 @@
             if (edad_en_7_anos($age) > 65){
                 return "En 7 años tendrás la edad de jubilación";
             } else {
-                return "¡Disfruta de tu tiempo";
+                return "¡Disfruta de tu tiempo!";
             }
 
         }
