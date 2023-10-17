@@ -24,8 +24,9 @@ $db = mysqli_connect("localhost","root","2253","peliculas") or die("fail");
         echo $row['nombre'];
         echo '<br>';
         echo $row['director'];
-        echo '<br>?';
+        echo '<br>';
     }
+    mysqli_close($db);
 
     ?>
 </body>
