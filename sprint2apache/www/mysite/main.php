@@ -18,14 +18,19 @@ $db = mysqli_connect("localhost","root","2253","peliculas") or die("fail");
     $result = mysqli_query($db, $query) or die("query error");
 
     //Recorremos la query
-	
+	echo '<table>';
+    echo '<tr><th>Titulo</th><th>Director</th><th>imagen</th></tr>';
     
     while ($row = mysqli_fetch_array($result)){
+        echo '<tr><td>';
         echo $row['nombre'];
-        echo '<br>';
+        echo '</td><td>';
         echo $row['director'];
-        echo '<br>';
+        echo '</td><td>';
+        echo $row['url_imagen'];
+        echo '</td></tr>';
     }
+    echo '</table>';
     mysqli_close($db);
 
     ?>
