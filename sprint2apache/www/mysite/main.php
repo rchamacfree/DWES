@@ -35,7 +35,9 @@ $db = mysqli_connect("localhost","root","2253","peliculas") or die("fail");
     
     while ($row = mysqli_fetch_array($result)){
         echo '<tr><td>';
-        echo $row['nombre'];
+        echo '<a href="details.php?id='. $row["id"] .'">' . $row["nombre"] .'</a>';
+        
+      
         echo '</td><td>';
         echo $row['director'];
         echo '</td><td>';
