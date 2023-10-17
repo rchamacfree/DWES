@@ -1,5 +1,5 @@
 <?php
-    $db = mysqli_connect('localhost','root','2253','peliculas') or die('Fail');
+    $db = mysqli_connect('localhost','root','2253','tpeliculas') or die('Fail');
     
     if (!isset($_GET['id'])) {
         die ('No se ha recibido el id');
@@ -24,8 +24,8 @@
         echo '<h3>Comentarios:</h3>';
         echo '<ul>';
 
-        $query2 = 'SELECT * FROM tcomentarios WHERE pelicula_id = '.$pelicula;
-        $result2 = mysqli_query($db,$query2) or die('Query Error');
+        $query2 = 'SELECT * FROM tcomentarios WHERE pelicula_id =' . $pelicula;
+        $result2 = mysql_query($db,$query2) or die('Query Error');
         while ($row2 = mysqli_fetch_array($result2)){
             echo '<li>' . $row2["comentario"] . '</li>';
 
