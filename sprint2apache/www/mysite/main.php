@@ -11,11 +11,13 @@ $db = mysqli_connect("localhost","root","2253","peliculas") or die("fail");
 </head>
 <body>
     <h1>Conexión establecida.</h1>
+    <p>Resultado de la query</p>
     <?php
     //Lanzamos una query
     $query = 'SELECT * FROM tpeliculas';
     mysqli_query($db, $query) or die("query error");
     //Recorremos la query
+    
     while ($row = mysqli_fetch_array($result)){
         echo $row['nombre'];
         echo '<br>';
