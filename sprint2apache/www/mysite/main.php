@@ -15,8 +15,10 @@ $db = mysqli_connect("localhost","root","2253","peliculas") or die("fail");
     <?php
     //Lanzamos una query
     $query = 'SELECT * FROM tpeliculas';
-    mysqli_query($db, $query) or die("query error");
+    $result = mysqli_query($db, $query) or die("query error");
+
     //Recorremos la query
+	
     
     while ($row = mysqli_fetch_array($result)){
         echo $row['nombre'];
