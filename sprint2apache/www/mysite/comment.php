@@ -5,8 +5,8 @@
     }else{
         $pelicula_id = $_POST['pelicula_id'];
         $comentario = $_POST['new_comment'];
-      //$pass = "2253"; //Para acceso servidor
-        $pass = ""; //Para trabajar en local  
+        $pass = "2253"; //Para acceso servidor
+        //$pass = ""; //Para trabajar en local  
         $db = mysqli_connect('localhost','root',$pass,'peliculas') or die('Fail');
         $fecha = date('Y-m-d');
         //echo $fecha;

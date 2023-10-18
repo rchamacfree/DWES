@@ -21,7 +21,6 @@ header {
 
 section {
     display:flex;
-    border : 2px solid blue;
     background-color: white;
 }
 
@@ -57,16 +56,12 @@ td, th {
 
 
 #cover {
-    border: 2px solid red;
    /* position: relative;*/
    /* margin-right: 10px;*/
     float: left;
 }
 
 #datos {
-    border: 2px solid red;
-
-    
     margin-left: 20px;
     float:none;
 }
@@ -83,8 +78,7 @@ td, th {
 
 #comentarioForm {
    /* position: relative;*/
-    border: 2px solid red;
-    margin-left: 20px;
+   margin-left: 20px;
 
     
 }

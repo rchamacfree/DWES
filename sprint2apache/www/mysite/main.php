@@ -1,6 +1,6 @@
 <?php 
-//$pass = "2253"; //Para acceso servidor
-$pass = ""; //Para trabajar en local
+$pass = "2253"; //Para acceso servidor
+//$pass = ""; //Para trabajar en local
 $db = mysqli_connect("localhost","root",$pass,"peliculas") or die("fail");
 ?>
 
