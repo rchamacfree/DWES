@@ -1,5 +1,7 @@
 <?php 
-$db = mysqli_connect("localhost","root","2253","peliculas") or die("fail");
+//$pass = "2253"; //Para acceso servidor
+$pass = ""; //Para trabajar en local
+$db = mysqli_connect("localhost","root",$pass,"peliculas") or die("fail");
 ?>
 
 <!DOCTYPE html>
@@ -8,22 +10,14 @@ $db = mysqli_connect("localhost","root","2253","peliculas") or die("fail");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-	table {
-		font-family: arial , sans-serif;
-		border-collapse: collapse;
-		width: 100%;
-		}
-	td, th {
-		border: 1px solid #dddddd;
-		text-align: left;
-		padding: 8px;
-		}
-    </style>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <h1>Conexión establecida.</h1>
-    <p>Resultado de la query</p>
+    <header>
+    <h1>Listado de películas</h1>
+    </header>
+    <section>
     <?php
     //Lanzamos una query
     $query = 'SELECT * FROM tpeliculas';
@@ -43,13 +37,14 @@ $db = mysqli_connect("localhost","root","2253","peliculas") or die("fail");
         echo '</td><td>';
         echo '<img src="';
 	echo $row['url_imagen'];
-	echo '" alt = "imagen pelicula" width = "100" height = "200">';
+	echo '" alt = "imagen pelicula" height = "100">';
         echo '</td></tr>';
     }
     echo '</table>';
     mysqli_close($db);
 
     ?>
+    </section>
 </body>
 </html>
 

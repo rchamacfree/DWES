@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background-color:rgba(245,245,220,0.5) ;*/
+    background-color: beige;
+}
+header, section {
+   /* width: 90%;*/
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    /*background-color: rgba(245,245,220,0.8);*/
+    /*background-color: white;*/
+}
+header {
+    background-color: white;
+}
+
+section {
+    display:flex;
+    border : 2px solid blue;
+    background-color: white;
+}
+
+
+h1 {
+
+    text-align: center;
+    /*margin: 5px;*/
+}
+h2 {
+    margin-top: 10px;
+}
+h4 {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+table {
+    font-family: arial , sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+
+
+    }
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+
+
+#cover {
+    border: 2px solid red;
+   /* position: relative;*/
+   /* margin-right: 10px;*/
+    float: left;
+}
+
+#datos {
+    border: 2px solid red;
+
+    
+    margin-left: 20px;
+    float:none;
+}
+#comentarios {
+
+    margin: 10px;
+
+}
+
+#comentarios ul li {
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+#comentarioForm {
+   /* position: relative;*/
+    border: 2px solid red;
+    margin-left: 20px;
+
+    
+}
+
+textarea {
+    margin-top: 10px;
+}
+
+input {
+    margin-top: 10px;
+}
+
+.fecha {
+    font-size: 0.7rem;
+    color: gray;
+}
+
